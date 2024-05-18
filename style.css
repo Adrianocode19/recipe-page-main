@@ -1,0 +1,133 @@
+@font-face {
+    font-family: YoungSerif-Regular;
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body p {
+    font-family: 'Outfit';
+    line-height: 25px;
+}
+
+li::marker {
+    font-weight: bold;
+    color: hsl(14, 45%, 36%);
+}
+
+img {
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.container_content {
+    padding: 15px 30px;
+}
+
+.title_recipe {
+    font-family: 'YoungSerif-Regular';
+    margin-bottom: 20px;
+}
+
+.container_preparation {
+    border-radius: 10px;
+    background: hsl(330, 100%, 98%);
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.title_preparation {
+    font-family: 'Outfit';
+    color: hsl(332, 51%, 32%);
+}
+
+.list_preparation li {
+    padding-left: 15px;
+    font-family: 'Outfit';
+    line-height: 30px;
+    margin: 5px 20px;
+}
+
+.container_items {
+    border-bottom: 1px solid gray;
+}
+
+.title {
+    font-family: 'YoungSerif-Regular';
+    color: hsl(14, 45%, 36%);
+    margin: 20px 0;
+}
+
+
+.list {
+    font-family: 'Outfit';
+    padding: 3px 0px 0px 25px;
+    line-height: 30px;
+}
+
+.list li {
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.container_nutritionTable {
+    margin-top: 15px;
+}
+
+.info_table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding: 10px 30px;
+}
+
+.info_table strong {
+    font-family: 'Outfit';
+    color: hsl(14, 45%, 36%);
+}
+
+.container_nutritionTable .info_table:last-child {
+    border: none;
+}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        width: 100vw;
+        padding: 50px;
+    }
+    .container_content {
+        padding: 0;
+    }
+    .image {
+        margin-bottom: 40px;
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+
+
